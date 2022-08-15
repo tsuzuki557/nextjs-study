@@ -1,0 +1,7 @@
+.btnWrap{
+}
+
+/* 注意！ Error: Missing whitespace before :global */
+.btnWrap :global .is-M{
+  color: red;
+}

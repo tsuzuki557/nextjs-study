@@ -1,10 +1,12 @@
-interface ButtonProps {
+import styles from "./Button.module.css";
+
+type ButtonProps = {
   primary?: boolean;
   backgroundColor?: string;
   size?: "S" | "M" | "L" | "LL";
   label?: string;
   onClick?: () => void;
-}
+};
 
 const Button: React.FC<ButtonProps> = ({
   primary = false,
@@ -15,13 +17,15 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const mode = primary ? "is--primary" : "is--secondary";
   return (
-    <button
-      className={[`test`, `is-${size}`, mode].join(" ")}
-      style={{ backgroundColor }}
-      {...props}
-    >
-      {label}
-    </button>
+    <div className={styles.btnWrap}>
+      <button
+        className={[`test`, `is-${size}`, mode].join(" ")}
+        style={{ backgroundColor }}
+        {...props}
+      >
+        {label}
+      </button>
+    </div>
   );
 };
 
