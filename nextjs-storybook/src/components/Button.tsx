@@ -3,7 +3,7 @@ interface ButtonProps {
   backgroundColor?: string;
   size?: "S" | "M" | "L" | "LL";
   label?: string;
-  //onClick?: () => void;
+  onClick?: () => void;
 }
 
 const Button: React.FC<ButtonProps> = ({

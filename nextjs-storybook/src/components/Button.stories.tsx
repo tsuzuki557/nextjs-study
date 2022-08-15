@@ -11,16 +11,6 @@ export default {
 
 const Template: ComponentStory<typeof Button> = (args) => <Button {...args} />;
 
-// export const Basic1: ComponentStory<typeof Button> = () => (
-//   <Button>ボタンA</Button>
-// );
-// export const Basic2: ComponentStory<typeof Button> = () => (
-//   <>
-//     <Button />
-//     <Button />
-//   </>
-// );
-
 export const Basic1 = Template.bind({});
 Basic1.args = {
   primary: true,

@@ -18,7 +18,7 @@ const Home: NextPage = () => {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
-        <Button />
+        <Button label="ボタンだよ" onClick={() => console.log("おしたよ")} />
 
         <p className={styles.description}>
           Get started by editing{" "}
