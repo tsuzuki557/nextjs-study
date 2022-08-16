@@ -13,6 +13,7 @@ const Button: React.FC<ButtonProps> = ({
   label = "初期ボタン",
   size = "M",
   backgroundColor = "#fff",
+  onClick,
   ...props
 }) => {
   const mode = primary ? "is--primary" : "is--secondary";
@@ -21,6 +22,7 @@ const Button: React.FC<ButtonProps> = ({
       <button
         className={[`test`, `is-${size}`, mode].join(" ")}
         style={{ backgroundColor }}
+        onClick={onClick}
         {...props}
       >
         {label}
