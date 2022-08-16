@@ -1,9 +1,10 @@
 import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
-import Home from "./index";
+
+import { Home } from "./Home";
 
 export default {
-  title: "PAGE/TopPage",
+  title: "PAGE/Home",
   component: Home,
 } as ComponentMeta<typeof Home>;
 

@@ -1,11 +1,11 @@
 import React from "react";
 
-type MetaProps = {
+type Props = {
   siteTtl: string;
   siteDesc?: string;
 };
 
-const Meta: React.FC<MetaProps> = ({
+const Meta: React.FC<Props> = ({
   siteTtl = "サイトタイトル",
   siteDesc = "サイトの説明を書く",
 }) => {
@@ -18,4 +18,4 @@ const Meta: React.FC<MetaProps> = ({
   );
 };
 
-export default Meta;
+export { Meta };

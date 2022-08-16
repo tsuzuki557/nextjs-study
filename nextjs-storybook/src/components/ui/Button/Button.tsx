@@ -1,6 +1,6 @@
 import styles from "./Button.module.css";
 
-type ButtonProps = {
+type Props = {
   primary?: boolean;
   backgroundColor?: string;
   size?: "S" | "M" | "L" | "LL";
@@ -8,7 +8,7 @@ type ButtonProps = {
   onClick?: () => void;
 };
 
-const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<Props> = ({
   primary = false,
   label = "初期ボタン",
   size = "M",
@@ -31,4 +31,4 @@ const Button: React.FC<ButtonProps> = ({
   );
 };
 
-export default Button;
+export { Button };
