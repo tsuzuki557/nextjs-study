@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
+    // 絶対パスでインストールできるように設定
+    // ref. https://nextjs.org/docs/advanced-features/module-path-aliases
+    "baseUrl": ".",
+    // モジュールパスのエイリアス設定
     "paths": { "@/*": ["src/*"] },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
