@@ -12,15 +12,22 @@ const Footer: React.FC = () => {
       <a href="" target="_blank" rel="noopener noreferrer">
         テキスト
         <span className={styles.logo}>
-          <Image src={vercelLogo} alt="Vercel Logo" width={72} height={16} />
+          <Image
+            src={vercelLogo}
+            alt="Vercel Logo"
+            width={72}
+            height={16}
+            priority
+          />
           <Image
             src={sampleImg}
             layout="responsive"
             alt="実験中"
-            placeholder="blur"
+            //placeholder="blur"
             width={800}
-            height={"200"}
+            height={200}
             style={{ transition: "200ms" }}
+            priority
           />
         </span>
         {/* 注意！ インポートしたものは、ベースパスを元に自動で変換してくれる */}
